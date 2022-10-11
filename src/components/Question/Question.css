@@ -13,3 +13,12 @@
 .question input{
     margin: .4rem;
 }
+
+.quiz-header{
+    display: flex;
+    align-items: center;
+    /* color: #000; */
+}
+#icon{
+    font-size: x-large;
+}
