@@ -1,0 +1,15 @@
+.question{
+    background-color: cadetblue;
+    margin: 10px;
+    margin-left: 500px ;
+    margin-right: 500px;
+    padding: 20px;
+    text-align: left;
+    padding-left: 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+}
+.question input{
+    margin: .4rem;
+}

@@ -1,20 +1,22 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
+import './Details.css';
 
 const Details = () => {
     const quizDetails = useLoaderData();
     const {id, name, logo, questions} = quizDetails.data;
     return (
-        <div>
-            <h6>{name}</h6>
+        <div className='details'>
             <img src={logo}></img>
-            <p>{questions.length}</p>
+            <h2>{name}</h2>
             {
                 questions.map(question=><Question
                     question={question.question}
+                    options={question.options}
                 ></Question>)
             }
+           
         </div>
     );
 };
