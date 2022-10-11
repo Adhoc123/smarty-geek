@@ -11,14 +11,15 @@
 .header {
     display: flex;
     justify-content: space-between;
-    margin-left: 120px;
-    margin-right: 120px;
+    /* margin-left: 120px;
+    margin-right: 120px; */
     margin-top: 20px;
     background-color: cadetblue;
     align-items: center;
     padding: 20px;
-    border-radius: 7px;
     margin-bottom: 10px;
+    padding-left: 170px;
+    padding-right: 170px;
 }
 .header h1{
     color: white;

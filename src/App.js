@@ -9,6 +9,7 @@ import Main from './layouts/Main';
 import Content from './components/Content/Content';
 import Report from './components/Report/Report';
 import Demography from './components/Demography/Demography';
+import Home from './components/Home/Home';
 
 function App() {
   const router = createBrowserRouter([
@@ -18,6 +19,10 @@ function App() {
       children: [
         {
           path: '/',
+          element: <Home></Home>
+        },
+        {
+          path: '/content',
           element: <Content></Content>
         },
         {
