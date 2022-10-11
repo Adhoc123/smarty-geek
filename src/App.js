@@ -10,6 +10,7 @@ import Content from './components/Content/Content';
 import Report from './components/Report/Report';
 import Demography from './components/Demography/Demography';
 import Home from './components/Home/Home';
+import Details from './components/Details/Details';
 
 function App() {
   const router = createBrowserRouter([
@@ -33,6 +34,14 @@ function App() {
         {
           path: '/demography',
           element: <Demography></Demography>
+        },
+        {
+          path: '/quiz/:quizId',
+          element: <Details></Details>
+        },
+        {
+          path: '*',
+          element: <div>This route not found 404</div>
         }
       ]
     }
