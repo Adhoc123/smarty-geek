@@ -26,6 +26,12 @@
     font-weight: bold;
 }
 .links a:hover{
-    color: gold;
+    color: white;
     cursor: pointer;
+    /* border: 1px solid red; */
+    background-color: blueviolet;
+    padding-left: 37px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    border-radius: 5px;
 }
