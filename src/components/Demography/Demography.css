@@ -3,6 +3,14 @@
     display: flex;
     justify-content: center;
     margin-top: 4%;
+    
     /* align-items: center; */
     
+}
+@media only screen and (max-width: 600px){
+    .chart{
+       margin-left: 120px;
+       margin-right: 10px;
+       width: 300px;
+    }
 }
