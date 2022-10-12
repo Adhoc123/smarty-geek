@@ -12,7 +12,14 @@ const Question = ({question,options,correctAnswer}) => {
     cleanQuestion = cleanQuestion.replace(/&nbsp;/g,'')
     const handle = (option) =>{
        if(option===correctAnswer){
-        toast.info('hello');
+        toast.success('Correct Answer', {
+            position: toast.POSITION.TOP_CENTER
+        });
+       }
+       else{
+        toast.error('Wrong Answer', {
+            position: toast.POSITION.TOP_CENTER
+        });
        }
 
     }
@@ -32,10 +39,10 @@ const Question = ({question,options,correctAnswer}) => {
             {
                 options.map(option=>
                     <div>
-                      <input onClick={handle(option)}   type="radio" id="huey" name="drone" value="huey"
+                      <input onClick={()=>handle(option)}   type="radio" id="huey" name="drone" value="huey"
                              checked/>   
-                      {/* {handle(option)===correctAnswer?<ToastContainer/>:'heloo'} */}
-                      <label for="huey">{option}</label>                      
+                      <label for="huey">{option}</label>    
+                      <ToastContainer/>                  
                     </div> 
                 )
             }
