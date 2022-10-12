@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Main from './layouts/Main';
 import Content from './components/Content/Content';
-import Report from './components/Report/Report';
+import Blog from './components/Blog/Blog';
 import Demography from './components/Demography/Demography';
 import Home from './components/Home/Home';
 import Details from './components/Details/Details';
@@ -28,8 +28,8 @@ function App() {
           element: <Content></Content>
         },
         {
-          path: '/report',
-          element: <Report></Report>
+          path: '/blog',
+          element: <Blog></Blog>
         },
         {
           path: '/demography',
@@ -44,7 +44,7 @@ function App() {
         },
         {
           path: '*',
-          element: <div>This route not found 404</div>
+          element: <div className='not-found'>This route not found 404</div>
         }
       ]
     }
