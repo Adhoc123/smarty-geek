@@ -1,0 +1,15 @@
+.quizes{
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+   
+}
+.quizes button{
+    width: 600px;
+    height: 200px;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+}

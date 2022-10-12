@@ -6,11 +6,11 @@ import {
   Route
 } from "react-router-dom";
 import Main from './layouts/Main';
-import Content from './components/Content/Content';
 import Blog from './components/Blog/Blog';
 import Demography from './components/Demography/Demography';
 import Home from './components/Home/Home';
 import Details from './components/Details/Details';
+import Quiz from './components/Quiz/Quiz';
 
 function App() {
   const router = createBrowserRouter([
@@ -24,8 +24,9 @@ function App() {
           element: <Home></Home>
         },
         {
-          path: '/content',
-          element: <Content></Content>
+          path: '/quizes',
+          loader: ()=>fetch(`https://openapi.programming-hero.com/api/quiz`),
+          element: <Quiz></Quiz>
         },
         {
           path: '/blog',
