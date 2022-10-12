@@ -1,5 +1,5 @@
 .question{
-    background-color: cadetblue;
+    background-color: white;
     margin: 10px;
     margin-left: 500px ;
     margin-right: 500px;
@@ -8,10 +8,13 @@
     padding-left: 40px;
     border-radius: 8px;
     font-weight: bold;
-    color: white;
+    color: cadetblue;
+    box-shadow: 4px 4px 9px gray;
+    margin-bottom: 20px;
 }
 .question input{
     margin: .4rem;
+    cursor: pointer;
 }
 
 .quiz-header{
@@ -21,4 +24,5 @@
 }
 #icon{
     font-size: x-large;
+    cursor: pointer;
 }

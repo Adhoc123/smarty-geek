@@ -40,7 +40,7 @@ const Question = ({question,options,correctAnswer}) => {
                 options.map(option=>
                     <div>
                       <input onClick={()=>handle(option)}   type="radio" id="huey" name="drone" value="huey"
-                             checked/>   
+                             />   
                       <label for="huey">{option}</label>    
                       <ToastContainer/>                  
                     </div> 
