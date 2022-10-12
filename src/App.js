@@ -3,7 +3,7 @@ import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
+  Route
 } from "react-router-dom";
 import Main from './layouts/Main';
 import Content from './components/Content/Content';
@@ -33,6 +33,7 @@ function App() {
         },
         {
           path: '/demography',
+          loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Demography></Demography>
         },
         {
